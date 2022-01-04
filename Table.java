@@ -5,7 +5,7 @@ import java.awt.event.*;
 public class Table {
     // Creating instances of Components
     TextArea result=new TextArea();
-    Label number=new Label("Enter your Number:");
+    Label number=new Label("Enter your Number");
     TextField table=new TextField();
     Button button=new Button("Calculation");
     Button button1=new Button("Clear");
@@ -15,12 +15,12 @@ public class Table {
         Frame frame=new Frame("Table Software");
 
         // Setting bounds of Components
-        number.setBounds(0,50,130,30);
-        table.setBounds(135,50,80,30);
-        button.setBounds(40,90,80,30);
+        number.setBounds(41,50,318,30);
+        table.setBounds(41,80,318,30);
+        button.setBounds(41,123,81,30);
         button.setBackground(Color.gray);
         button1.setBackground(Color.gray);
-        button1.setBounds(125,90,50,30);
+        button1.setBounds(301,123,58,30);
 
         button.addActionListener(new ActionListener() {
             @Override
@@ -46,7 +46,7 @@ public class Table {
             }
         });
 
-        result.setBounds(40,125,150,250);
+        result.setBounds(41,153,318,247);
         result.setEditable(false);
 
         // Adjustment of Frame and adding component to Frame
