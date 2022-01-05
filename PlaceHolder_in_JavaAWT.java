@@ -20,8 +20,8 @@ public class PlaceHolder_in_JavaAWT {
             @Override
             public void focusLost(FocusEvent e) {
                 if(textField.getText().isEmpty()){
-                    textField.setForeground(Color.gray);
                     textField.setText("Enter your name");
+                    textField.setForeground(Color.gray);
 
                 }
             }
